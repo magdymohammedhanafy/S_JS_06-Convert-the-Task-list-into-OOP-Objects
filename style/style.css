@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: rgba(0, 0, 0, 0.877);
+    color: grey;  
+}
+
+.inputField .taskInput input,
+.inputField .periorityInput input
+{
+    height: 50px;
+    width: 200px;
+   border-radius:10px ;
+   border: 1px solid red;
+}
+
+.inputField .Sub 
+{
+  display: flex;
+ 
+}
+
+.inputField .Sub button
+{
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius:10px ;
+}
+
+
+.inputField{
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+    font-size: 25px;
+    
+}
+
+
+
+.outputField{
+    border: 2px solid grey;
+    width: 80%;
+}
+
+.outputField table{
+    
+    width: 100%;
+    border-spacing: 5px;
+   
+}
+
+
+.outputField table td,
+.outputField table th
+{
+    
+   text-align: center;
+   font-size: 25px;
+   padding: 20px;
+   background-color: aqua;
+   border-spacing: 20px;
+   color: rgb(0, 0, 0);
+}
+
+
+
+
+.edit,
+.save,
+.save,
+.remove,
+.cancel,
+.state1,
+.state2
+{
+
+    height: 50px;
+    width: 65px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius:10px ;
+    background-color: green;
+    margin-left: 10px;
+    justify-content: ;
+
+}
+
+.remove,
+.state2
+{  
+    background-color: red;
+}
+.outputField table thead td{
+    background-color: grey;
+    color: rgb(46, 4, 4);
+}
+
+
+

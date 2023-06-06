@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Magdy</title>
+</head>
+<body>
+   <div class="inputField">
+        <div class="taskInput">
+            <label for="Task">Task Name:</label>
+            <input id="taskName" type="text" placeholder="Task Name">
+        </div>
+        <div class="periorityInput">
+            <label for="PeriorityDegree">Periority:</label>
+            <input id="Periority" type="text" placeholder="Periority">
+        </div>
+        <div class="Sub">
+            <button id="addTask">Add</button>
+            <button id="sort" >Sort</button>
+            <button id="DeleteItems" >Delete Selected</button>
+        </div>
+   </div>
+   <div class="outputField">
+    <table id="dataTable">
+      <tr>
+        <th>No</th>
+        <th>Task Name</th>
+        <th>Periority</th>
+        <th>Delete</th>
+        <th>Edit</th>
+        <th>Status</th>
+      </tr>  
+    </table>
+    
+   </div>
+    <script src="./java/java.js"></script>
+</body>
+</html>
