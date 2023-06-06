@@ -48,8 +48,25 @@ class Tasks
     }
 
       validation(name,periority){
+        let count=0;
+        let repeatChech=false;
         let taskNameCheck=false;
         let periorityCheck=false;
+        for(let j=0;j<taskData.length;j++)
+        {
+            if(name===taskData[j].name)
+            {
+                count++;
+            }
+        }
+        if(count==0)
+        {
+          repeatChech=true;
+          
+        }
+        else{
+            alert("repeated task");
+        }
         if(!(name.length>10||name===""))
         {
             taskNameCheck=true;
@@ -58,7 +75,7 @@ class Tasks
         {
             periorityCheck=true;
         }
-        if(taskNameCheck===true&&periorityCheck===true)  
+        if(taskNameCheck===true&&periorityCheck===true&& repeatChech===true)  
         {
             return true;
         } 
@@ -132,7 +149,7 @@ let deleteRow=function(index)
 
 let saveEdit=function(index)
 {
-    taskData[index].taskName=document.getElementById("name").value;
+    taskData[index].name=document.getElementById("name").value;
     taskData[index].periority=document.getElementById("per").value;
     taskData[index].editMode=false;
     display();
